@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* contenedor */
+
+.contenedor {
+  width: 70%;
+  margin: auto;
+}
+
+/* Hero */
+.hero {
+  height: 34vh;
+  background-image: url("assets/fondo_hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+
+}
+
+.hero_text {
+  color: #ffffff;
+  margin: auto;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: rgba(82, 80, 85, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* logos */
+.cont_logos {
+  height: 30vh;
+  padding: 20px
+}
+.logos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.logos img {
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+}
+
+/* footer */
+.footer_flex {
+  text-align: center;
+  background-color: #1e3f1e;
+  color: #ffffff;
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 0;
+}
+/* =================================== */
+@media (max-width: 910px) {
+  .contenedor {
+    width: 100%;
+  }
+  .footer_flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 6px 0;
+  }
+
+}
